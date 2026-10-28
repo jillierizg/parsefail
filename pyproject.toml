@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jillierizg-parsefail"
+version = "0.1.0"
+description = "解析时间标记，排列智能体的输出解析失败的发生顺序，标出间隔异常与逆序事件"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "jillierizg" }]
+keywords = ["llm", "cli", "analysis", "observability"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://jillierizg.github.io"
+Repository = "https://github.com/jillierizg/parsefail"
+Issues = "https://github.com/jillierizg/parsefail/issues"
+
+[project.scripts]
+parsefail = "parsefail:main"
+
+[tool.setuptools]
+py-modules = ["parsefail"]
